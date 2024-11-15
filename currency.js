@@ -101,8 +101,6 @@ function getExchangeRate() {
         });
 }
 
-// DARK MODE TOGGLE FUNCTIONALITY
-
 // Select the dark mode switch checkbox and elements to be affected
 const darkModeSwitch = document.getElementById('darkModeSwitch');
 const body = document.body;
@@ -136,8 +134,6 @@ darkModeSwitch.addEventListener('change', () => {
     }
 });
 
-// HISTORY FUNCTIONALITY
-
 // Select the history list element
 const historyList = document.getElementById('historyList');
 // Retrieve any saved conversion history from localStorage (if any)
@@ -163,3 +159,42 @@ conversionHistory.forEach((item) => {
     historyElement.textContent = item;
     historyList.appendChild(historyElement);
 });
+document.getElementById('homeButton').addEventListener('click', function() {
+    alert('Home Button Clicked!');
+});
+
+document.getElementById('aboutButton').addEventListener('click', function() {
+    alert('About Button Clicked!');
+});
+
+document.getElementById('signupButton').addEventListener('click', function() {
+    alert('Sign Up Button Clicked!');
+});
+
+document.getElementById('helpButton').addEventListener('click', function() {
+    alert('Help Button Clicked!');
+});
+
+document.getElementById('contactButton').addEventListener('click', function() {
+    alert('Contact Us Button Clicked!');
+});
+
+// Social media icon click event listeners
+document.querySelector('.social-media .fa-facebook-f').addEventListener('click', function() {
+    alert('Facebook icon clicked!');
+});
+
+document.querySelector('.social-media .fa-twitter').addEventListener('click', function() {
+    alert('Twitter icon clicked!');
+});
+
+document.querySelector('.social-media .fa-instagram').addEventListener('click', function() {
+    alert('Instagram icon clicked!');
+});
+
+document.querySelector('.social-media .fa-linkedin-in').addEventListener('click', function() {
+    alert('LinkedIn icon clicked!');
+});
+
+
+

@@ -5,13 +5,25 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="homeButton">Home</a></li>
+            <li><a href="#" id="aboutButton">About</a></li>
+            <li><a href="#" id="signupButton">Sign Up</a></li>
+            <li><a href="#" id="helpButton">Help</a></li>
+            <li><a href="#" id="contactButton">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Currency Converter Section -->
     <div class="wrapper">
         <header>Currency Converter</header>
-        <div class = "dark-mode-toggle">
-            <input type="checkbox"id ="darkModeSwitch">
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeSwitch">
             <label for="darkModeSwitch">Dark Mode</label>
         </div>
         <form action="#">
@@ -23,9 +35,9 @@
                 <div class="from">
                     <p>From</p>
                     <div class="select-box">
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="Flag">
+                        <img src="https://flagsapi.com/KE/flat/64.png" alt="Flag">
                         <select>
-                            <option value="USD">USD</option>
+                            <option value="KES">KES</option>
                             <option value="NPR">NPR</option>
                             <option value="INR">INR</option>
                             <option value="PKR">PKR</option>
@@ -37,7 +49,7 @@
                 <div class="to">
                     <p>To</p>
                     <div class="select-box">
-                        <img src="https://flagsapi.com/NP/flat/64.png" alt="Flag">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="Flag">
                         <select>
                             <option value="USD">USD</option>
                             <option value="NPR">NPR</option>
@@ -55,9 +67,17 @@
             <h3>Conversion History</h3>
             <ul id="historyList"></ul>
         </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
+
     <script src="countries.js"></script>
     <script src="currency.js"></script>
-    
 </body>
 </html>
